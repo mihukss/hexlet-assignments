@@ -8,11 +8,11 @@ class Router
 
     case path
     when '/'
-      [200, {}, ['Home Page']]
+      [200, {}, ['Hello, World!']]
     when '/about'
-      [200, {}, ['About Page']]
+      [200, {}, ['About page']]
     else 
-      [404, {}, []]
+      [404, {}, ['404 Not Found']]
     end
   end
 end

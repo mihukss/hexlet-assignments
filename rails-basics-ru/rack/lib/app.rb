@@ -10,7 +10,7 @@ module App
   def self.init
     Rack::Builder.new do |builder|
       builder.use AdminPolicy
-      builder.use ExecutionTimer
+      # builder.use ExecutionTimer
       # BEGIN
       
       # END
