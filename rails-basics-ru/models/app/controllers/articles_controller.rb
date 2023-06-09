@@ -4,5 +4,6 @@ class ArticlesController < ApplicationController
   end
 
   def show
+    @articles = Article.find_by(params[:id])
   end
 end

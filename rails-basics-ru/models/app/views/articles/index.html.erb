@@ -1,8 +1,7 @@
-<h1>Articles#index</h1>
-<p>Find me in app/views/articles/index.html.erb</p>
-    <% @articles.each do |article| %>
-      <tr>
-        <h2><a href="<%= show_articles_url %>"><%= article.title %></a></h2>
-      </tr>
-    <% end %>
+<h1>Articles</h1>
+<% @articles.each do |article| %>
+  <li>
+    <a href="<%= show_articles_url %>"><%= article.title %></a>
+  </li>
+<% end %>
 

@@ -2,7 +2,7 @@
 
 Rails.application.routes.draw do
   get 'articles/index', as: 'articles_page' 
-  get 'articles/show', as: 'show_articles'
+  get "articles/show", as: 'show_articles'
   root 'home#index'
   # BEGIN
   
